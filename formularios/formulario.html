@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>formulario</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="formImage">
+        <img src="Forms-rafiki.svg" alt="" />
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="formHead">
+            <div class="title">
+              <h1>
+                Não encontrou o que procurava?
+                <br />
+
+                Preencha o formulário e retornaremos o contato.
+              </h1>
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="input-box">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="digite seu Email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="number"
+                placeholder="(xx) xxxx-xxxx"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="aniversário">Qual sua data de nascimento?</label>
+              <input type="date" name="aniversário" id="aniversário" required />
+            </div>
+            <div class="input-box">
+              <label for="bairro">Qual bairro você mora?</label>
+
+              <select id="bairro" name="bairro">
+                <option value="bairro">Bairro</option>
+                <option value="bairro2">Bairro</option>
+                <option value="Bairro3">Bairro</option>
+                <option value="Bairro4">Bairro</option>
+                <option value="Bairro5">Bairro</option>
+                <option value="Bairro6">Bairro</option>
+                <option value="Bairro7">Bairro</option>
+                <option value="Bairro8">Bairro</option>
+                <option value="Bairro9">Bairro</option>
+                <option value="Bairro10">Bairro</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="Contato">Período para contato</label>
+
+              <select id="Contato" name="Contato">
+                <option value="MANHÃ">Manhã</option>
+                <option value="TARDE">Tarde</option>
+                <option value="NOITE">Noite</option>
+              </select>
+            </div>
+
+            <div class="autorizacao">
+              <div class="autorizacaoTitle">
+                <h5>Podemos te ligar?</h5>
+              </div>
+
+              <div class="choiceGroup">
+                <div class="choiceInput">
+                  <input type="radio" name="choice" id="choice" />
+                  <label for="sim">SIM</label>
+                </div>
+                <div class="choiceInput">
+                  <input type="radio" name="choice" id="choice" />
+                  <label for="nao">NÃO</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-enviar">
+            <button><a href="#">Enviar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascript/form.js"></script>
+  </body>
+</html>
